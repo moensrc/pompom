@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Loading your Character...</title>
+	<link rel="icon" type="image/svg+xml" href="./images/favicon.svg">
+</head>
+
+<body>
+    <video width="100%" autoplay muted>
+        <source src="./videos/loading-screen.mp4" type="video/mp4">
+    </video>
+
+    <script>
+        var setTimeout;
+
+        setTimeout(function() {
+            location.href = "pompom.html";
+        }, 7500);
+    </script>
+
+</body>
+
+<style>
+    body {
+        background-color: #FF7BAC;
+        margin:0;
+    }
+
+    video {
+        margin: 0 auto;
+        display: block;
+        /* margin-top: 30em; */
+    }
+</style>
+
+</html>
