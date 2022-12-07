@@ -22,23 +22,27 @@ function playFlyVideo() {
     video.src = "./videos/flying.mp4";
     video.muted = false;
     hideItems();
+    resetVideo();
 }
 
 function playEatVideo() {
     video.src = "./videos/eating.mp4";
     video.muted = false;
     hideItems();
+    resetVideo();
 }
 
 function playFightVideo() {
     video.src = "./videos/fighting.mp4";
     video.muted = false;
     hideItems();
+    resetVideo();
 }
 
 function playIdleVideo() {
     video.src = "./videos/idle-animation.mp4";
     video.muted = true;
+    resetVideo();
     footerImg.classList.remove("hide");
     // buttonMusic.classList.remove("hide");
 }
@@ -49,6 +53,17 @@ function hideItems() {
     // buttonMusic.classList.add("hide");
 }
 
+function resetVideo() {
+
+    setTimeout(function() {
+        video.classList.remove("reset");
+    }, 500)
+
+    video.classList.add("reset");
+}
+
+
+// Play music
 buttonMusic.addEventListener("click", toggleMusic);
 
 function toggleMusic() {
