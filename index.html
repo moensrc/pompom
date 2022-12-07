@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <video width="100%" autoplay muted>
+    <video autoplay muted>
         <source src="./videos/loading-screen.mp4" type="video/mp4">
     </video>
 
@@ -24,14 +24,18 @@
 
 <style>
     body {
-        background-color: #FF7BAC;
-        margin:0;
+        /* background-color: #FF7BAC; */
+        margin: 0;
+        overflow-x: hidden;
     }
 
     video {
         margin: 0 auto;
         display: block;
-        /* margin-top: 30em; */
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        object-position: center 80%;
     }
 </style>
 

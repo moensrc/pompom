@@ -10,23 +10,47 @@
 </head>
 
 <body>
+    <header>
+        <!-- Image overlay: Title of game and name of character -->
+        <img src="./images/overlay_topbar.png" alt="Pompom name and title Fantasy Fighter">
+    </header>
     <main>
-        <h1>Character Overview</h1>
         <!-- Image overlay with statistics of the character -->
-        <img src="./images/overlay-stats.png" alt="Stats: Health & Damage" id="stats">
+        <!-- <img src="./images/overlay-stats.png" alt="Stats: Health & Damage" id="stats"> -->
+
         <section>
-            <video width="100%" id='video' autoplay loop muted>
+            <video id='video' autoplay loop muted>
               <source src="./videos/idle-animation.mp4" type="video/mp4">
             </video>
         </section>
 
         <div>
             <h3>Abilities</h3>
-            <img src="./images/wings.gif" alt="Fly" id="button_fly">
-            <img src="./images/purin.gif" alt="Eat" id="button_eat">
-            <img src="./images/swords.gif" alt="Fight!" id="button_fight">
+            <ul>
+                <li>
+                    <button><img src="./images/wings.gif" alt="Fly" id="button_fly"></button>
+                    <p class="key">A</p>
+                </li>
+                <li>
+                    <button><img src="./images/purin.gif" alt="Eat" id="button_eat"></button>
+                    <p class="key">X</p>
+                </li>
+                <li>
+                    <button><img src="./images/swords.gif" alt="Fight!" id="button_fight"></button>
+                    <p class="key">B</p>
+                </li>
+                <li>
+                    <button><img src="./images/overlay_arrow.png" alt="Idle state" id="button_idle"></button>
+                </li>
+                <li>
+                    <button><img src="./images/overlay_music-off.png" alt="Idle state" id="button_music"></button>
+                </li>
+            </ul>
         </div>
     </main>
+    <footer>
+        <img src="./images/overlay_bottombar.png" alt="Stats of character">
+    </footer>
 </body>
 
 <script src="script.js"></script>
